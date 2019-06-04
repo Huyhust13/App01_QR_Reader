@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>452</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>462</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>QR Reader</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="modeGroupBox">
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(52, 101, 164);</string>
+      </property>
+      <property name="title">
+       <string>Mode</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QRadioButton" name="readFromCameraRadioButton">
+         <property name="text">
+          <string>Read from Camera</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QRadioButton" name="generateQRRadioButton">
+         <property name="text">
+          <string>Generate QR</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QRadioButton" name="readFromImageRadioButton">
+         <property name="text">
+          <string>Read from Image</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="inputBrowsePushButton">
+         <property name="text">
+          <string>Browse</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="inputCamComboBox"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="inputImageLineEdit"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="inputTextLineEdit_2"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="generatePushButton">
+         <property name="text">
+          <string>Generate</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="qrtextLabel">
+        <property name="text">
+         <string>QR Text: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="qrtextLineEdit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="copyPushButton">
+        <property name="text">
+         <string>Copy</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="imageLabel">
+        <property name="minimumSize">
+         <size>
+          <width>320</width>
+          <height>240</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string>image</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
